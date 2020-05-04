@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+.footer02 .row{
+  height:141px;
+  border-top:2px solid #333;
+}
+.footer02 ul{
+  margin-top:70px;
+}
+.footer_logo{
+  margin-right:20px;
+}
+.footer02 .sns{
+  margin-top:-5px;
+  cursor:pointer;
+}

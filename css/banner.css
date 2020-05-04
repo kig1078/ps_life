@@ -1,0 +1,99 @@
+@charset 'utf-8';
+
+.banner img{
+  width:100%;
+  height:500px;
+}
+.banner_img{
+  position:relative;
+}
+.banner_txt{
+  position:absolute;
+  right:60px;
+  top:60px;
+  font-size:50px;
+  font-weight:bold;
+  text-align:right;
+}
+.pop_up_menu{
+  position:absolute;
+  padding:10px;
+  bottom:70px;
+  left:60px;
+  width:540px;
+  height:50px;
+  border:1px solid #2e9a45;
+  background:#fff;
+}
+.pop_up_menu li{
+  margin-right:10px;
+}
+.pop_up_menu li:last-child{
+  margin-right:0;
+}
+.pop_up_menu h4{
+  font-size:15px;
+  font-weight:bold;
+  color:#2e9a45;
+  margin-bottom:5px;
+}
+.pop_txt_box{
+  border:1px solid #333;
+  width:170px;
+  height:20px;
+  font-size:15px;
+}
+select.pop_txt_box{
+  height:22px;
+}
+label[for="man"],label[for="woman"]{
+  text-align:right;
+  border:1px solid black;
+  color:#333;
+  background:#fff;
+}
+label[for="woman"]{
+  margin-left:-7px;
+}
+input[type="radio"]:checked+label{
+  background:#2e9a45;
+  color:#fff;
+}
+input[type="radio"]{
+  display:none;
+}
+label[for="man"]::before{
+  content:'';
+  display:inline-block;
+  width:12px;
+  height:14px;
+  background-image:url(../images/sex_icon_set.svg);
+  background-size:200%;
+  background-position:-1px 0;
+}
+label[for="woman"]::before{
+  content:'';
+  display:inline-block;
+  width:12px;
+  height:14px;
+  background-image:url(../images/sex_icon_set.svg);
+  background-size:200%;
+  background-position:-12px 0;
+}
+.pop_up_menu .button{
+  width:60px;
+  height:50px;
+  background:#2e9a45;
+  color:#fff;
+  line-height:50px;
+  text-align:center;
+  cursor:pointer;
+}
+.pop_up_menu .button:hover{
+  width:56px;
+  height:46px;
+  background:white;
+  border:2px solid #2e9a45;
+  color:#333;
+  line-height:46px;
+}

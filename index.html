@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Life</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main_nav.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/sub_nav.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/notice.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <form class="login">
+    <fieldset class="login_row">
+      <legend class="login_tit">MEMBER <span>LOGIN</span></legend>
+      <a href="#" class="exit_btn fl_right" onclick="document.querySelector('.login').style.display='none';">X</a>
+      <table class="login_table">
+        <tr>
+          <td colspan="3">
+            <p>로그인을 하시면 회원을 위한 다양한 서비스와 혜택을 누리실 수 있습니다.</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="hold_img">
+            <img src="images/hold_img.jpg" alt="hold_img">
+          </th>
+          <th class="login_box">
+            <div>
+              <label for="id_box" id="id_box_label">아이디</label>
+              <input class="id_box id_bar" type="text" required autofocus>
+            </div>
+            <div>
+              <label for="password_box">비밀번호</label>
+              <input class="password_box" type="password" enabled>
+            </div>
+            <div class="check_box">
+              <input type="checkbox" id="login_chk">
+              <label for="login_chk">자동 로그인</label>
+            </div>
+          </th>
+          <th class="login_btn">
+            <input class="login_btn_box" type="submit" value="로그인">
+          </th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <ul>
+              <li><a href="#">아직 회원이 아니세요?</a></li>
+              <li><a href="#">아이디 또는 비밀번호를 잊으셨나요?</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+  <div class="wrap">
+    <header class="header">
+      <div class="row">
+        <a href="#"><img src="images/logo_img.png" alt="logo"></a>
+      </div>
+    </header>
+    <section class="main_nav">
+      <div class="row">
+        <ul class="nav clear_fix">
+          <li>
+            <a href="#">상품소개</a>
+            <ul id="main_nav_item">
+              <li><a href="#">스마트<br>저축보험</a></li>
+              <li><a href="#">실속든든<br>종신보험</a></li>
+              <li><a href="#">종합건강보험</a></li>
+              <li><a href="#">우리아이<br>올바른 성장보험</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">혜택서비스</a>
+            <ul id="main_nav_service">
+              <li><a href="#">건강관리<br>서비스</a></li>
+              <li><a href="#">퇴직연금<br>부가서비스</a></li>
+              <li><a href="#">단체복리후생<br>서비스</a></li>
+              <li><a href="#">VIP<br>서비스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">고객센터</a>
+            <ul id="main_nav_customer">
+              <li><a href="#">고객의소리</a></li>
+              <li><a href="#">유익한<br>고객정보</a></li>
+              <li><a href="#">소비자<br>보호체계</a></li>
+              <li><a href="#">민원현황<br>공시</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">회사소개</a>
+            <ul id="main_nav_company">
+              <li><a href="#">Ps life<br>소개</a></li>
+              <li><a href="#">사회공헌</a></li>
+              <li><a href="#">투자정보</a></li>
+              <li><a href="#">채용정보</a></li>
+            </ul>
+          </li>
+          <li><a href="#">공시실</a></li>
+          <li onclick="document.querySelector('.login').style.display='block';"><a href="#">로그인</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="row">
+        <div class="banner_img">
+          <img src="images/banner.png" alt="banner">
+          <div class="banner_txt">
+            <p>우리 가족 모두를</p>
+            <p>위한 인생 설계</p>
+          </div>
+          <div class="pop_up_menu clear_fix">
+            <ul>
+              <li class="pop_up_li item fl_left">
+                <h4 class="pop_name">상품선택</h4>
+                <div class="item_sel">
+                  <select class="pop_txt_box">
+                    <option value="item_01">상품을 선택해 주세요</option>
+                    <option value="item_02">우리가족 건강한 종신보험</option>
+                    <option value="item_03">무배당 평생연계 종신보험</option>
+                    <option value="item_04">프라임 평생설계 플러스 보험</option>
+                    <option value="item_05">뉴 실버 정기보험(사망보장)</option>
+                  </select>
+                </div>
+              </li>
+              <li class="pop_up_li birth fl_left">
+                <h4 class="pop_name">생년월일 입력</h4>
+                <div>
+                  <input class="pop_txt_box" type="text" placeholder="생년월일(예:19991212)" required>
+                </div>
+              </li>
+              <li class="pop_up_li sex fl_left">
+                <h4 class="pop_name">성별선택</h4>
+                <div>
+                  <input type="radio" name="unisex" id="man" value="man" checked>
+                  <label for="man">남자</label>
+                  <input type="radio" name="unisex" id="woman" value="woman">
+                  <label for="woman">여자</label>
+                </div>
+              </li>
+              <li class="pop_up_li button fl_left">
+                <div>확인</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sub_nav">
+      <div class="row">
+        <div class="sub_nav_title">
+          <h2>한국생명과 함께 당신의 내일을 준비하세요.</h2>
+        </div>
+        <ul class="sub_nav_content clear_fix">
+          <li class="fl_left">
+            <a href="#">
+              <img src="images/icon_01.png" alt="icon_01">
+              <p>사망보장</p>
+            </a>
+          </li>
+          <li class="fl_left">
+            <a href="#">
+              <img src="images/icon_02.png" alt="icon_02">
+              <p>건강·상태보장</p>
+            </a>
+          </li>
+          <li class="fl_left">
+            <a href="#">
+              <img src="images/icon_03.png" alt="icon_03">
+              <p>연금보험</p>
+            </a>
+          </li>
+          <li class="fl_left">
+            <a href="#">
+              <img src="images/icon_04.png" alt="icon_04">
+              <p>중대질병보장</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="content">
+      <div class="row clear_fix">
+        <div class="content_notice fl_left">
+          <h5>든든한 사망 보장으로 가족의 꿈과 미래를<br>지켜주세요.</h5>
+          <p>흐르는 세월에 따라 가족에게 필요한 자금도</p>
+          <p>달라집니다. (주)PS life 인생설계 플러스보험이</p>
+          <p>만일의 경우에 대비할 수 있는 기본적인 사망보험금은</p>
+          <p>물론, 통합 가입으로 인생전환의 시점인</p>
+          <p>노후생활자금 마련에도 유용한 상품입니다.</p>
+        </div>
+        <ul class="content_item fl_right">
+          <li><a href="#">우리가족 건강한 종신보험</a></li>
+          <li><a href="#">무배당 평생연계 종신보험</a></li>
+          <li><a href="#">프라임 평생설계 플러스 종신보험</a></li>
+          <li><a href="#">뉴 실버 정기보험(사망보장)</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <article class="footer01 notice">
+        <ul class="row clear_fix">
+          <li class="fl_left">
+            <h3 class="notice_tit">상품소개</h3>
+            <ul class="notice_menu notice_item">
+              <li><a href="#">스마트 저축보험</a></li>
+              <li><a href="#">실속든든 종신보험</a></li>
+              <li><a href="#">종합건강보험</a></li>
+              <li><a href="#">우리아이 올바른 성장보험</a></li>
+            </ul>
+          </li>
+          <li class="fl_left">
+            <h3 class="notice_tit">혜택서비스</h3>
+            <ul class="notice_menu notice_service">
+              <li><a href="#">건강관리 서비스</a></li>
+              <li><a href="#">퇴직연금 부가 서비스</a></li>
+              <li><a href="#">단체복리후생 서비스</a></li>
+              <li><a href="#">VIP 서비스</a></li>
+            </ul>
+          </li>
+          <li class="fl_left">
+            <h3 class="notice_tit">고객안내</h3>
+            <ul class="notice_menu notice_customer">
+              <li><a href="#">고객의 소리</a></li>
+              <li><a href="#">유익한 고객정보</a></li>
+              <li><a href="#">소비자 보호체계</a></li>
+              <li><a href="#">민원현황 공시</a></li>
+            </ul>
+          </li>
+          <li class="fl_left">
+            <h3 class="notice_tit">회사소개</h3>
+            <ul class="notice_menu notice_company">
+              <li><a href="#">PS life 소개</a></li>
+              <li><a href="#">사회공헌</a></li>
+              <li><a href="#">투자정보</a></li>
+              <li><a href="#">채용정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+      <article class="footer02">
+        <div class="row">
+          <ul class="clear_fix">
+            <div class="fl_left clear_fix">
+              <li class="footer_logo fl_left">
+                <img src="images/logo_img.png" alt="footer_logo">
+              </li>
+              <li class="footer_txt fl_left">
+                <address>
+                  <p>서울특별시 ○○구 ○○대로00길 00 생명보험주식회사 대표이사 ○○○  |사업자등록번호 000-000-00000</p>
+                  <p>COPYRIGHT © PS LIFEPLANET LIFE INSURANCE COMPANY ALL RIGHTS RESERVED.</p>
+                </address>
+              </li>
+            </div>
+            <li class="sns fl_right">
+              <img src="images/sns_icon_set.png" alt="footer_sns">
+            </li>
+          </ul>
+        </div>
+      </article>
+    </footer>
+  </div>
+</body>
+</html>

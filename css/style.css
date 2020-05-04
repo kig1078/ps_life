@@ -1,0 +1,59 @@
+@charset 'utf-8';
+
+.login_row{
+  width:580px;
+  background-position:0px 0px;
+  background-image:url(../images/login_bg.jpg);
+  background-repeat:no-repeat;
+  border:2px solid #333;
+}
+.exit_btn{
+  margin-right:10px;
+}
+.login table{
+  margin:0 auto;
+  padding:10px;
+  padding-bottom:30px;
+  height:250px;
+}
+.login table tr p,table tr li a{
+  font-size:14px;
+  text-decoration:none;
+}
+.login table tr p{
+  margin-left:-40px;
+  margin-bottom:10px;
+}
+.login .login_tit{
+  font-size:1.8em;
+  margin-left:10px;
+}
+.login .login_tit span{
+  font-weight:bold;
+}
+.login .login_box div{
+  text-align:left;
+  margin-left:60px;
+  margin-bottom:5px;
+}
+.login .login_box input{
+  border:1px solid #999;
+}
+.login .id_box,.password_box{
+  width:130px;
+}
+.login #id_box_label{
+  letter-spacing:0.28em;
+}
+.login .login_btn_box{
+  width:80px;
+  height:45px;
+  margin-bottom:24px;
+  margin-LEFT:20px;
+  background:linear-gradient(#666 0%, #999 50%, #333 50%, #666 100%);
+  color:#fff;
+  line-height:45px;
+}
+.login .id_bar{
+  margin-left:2.5px;
+}
